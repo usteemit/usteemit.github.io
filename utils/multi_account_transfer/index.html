@@ -6,7 +6,7 @@
   <script type="text/javascript" src="/vendor/popper/popper.min.js"></script>
   <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/vendor/steem/steem.min.js"></script>
+  <script type="text/javascript" src="//cdn.steemjs.com/lib/latest/steem.min.js"></script>
   <script type="text/javascript" src="js/transfer.min.js"></script> </head> <body>
   <div class="container">
       
@@ -33,7 +33,7 @@
           <div class="col-md-8 inputGroupContainer">
             <div class="input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="key" placeholder="Active key" class="form-control" type="text">
+              <input name="key" id="key" placeholder="Active key" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -57,8 +57,8 @@
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
               <input id="amount" placeholder="amount" class="form-control" type="text">
 			  <div style="position:relative; top:10px;">
-				  &nbsp;&nbsp;&nbsp;<input type="radio" id='currency' name="currency" value="SBD" checked>SBD
-				  &nbsp;<input type="radio" id='currency' name="currency" value="STEEM">STEEM
+				  &nbsp;&nbsp;&nbsp;<input type="radio" id="currency" name="currency" value="SBD" checked>SBD
+				  &nbsp;<input type="radio" id="currency" name="currency" value="STEEM">STEEM
 			  </div>
             </div>
           </div>
