@@ -1,0 +1,14 @@
+span:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.right {
+    float: right;
+    width: 100px;
+}
+
+.left {
+    overflow: hidden;
+	width: 100px;
+}

@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="/vendor/popper/popper.min.js"></script>
+  <script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/transfer.min.js"></script>
+</head>
+<body>
+  <div class="container">
+
+      <fieldset>
+
+        <!-- Form Name -->
+        <!-- <legend><center><h2><b>Multiple account balance transfer tool by @yuxi</b></h2></center></legend><br>-->
+		<legend><center><h2><b></b></h2></center></legend><br>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">你的帐户名称(转出帐户)</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input  name="from" id="from" placeholder="Your id" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" >你的Active Key</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="key" placeholder="Active key" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group" id="to-group">
+          <label class="col-md-4 control-label">转给谁</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input  name="to" placeholder="to" class="form-control"  type="text" id="txtTo0">
+			  <span style="position:relative; top:0px; font-size: 1.5em; cursor: pointer; cursor: hand;" title="Add a new account" id="add_account">
+				&nbsp;&nbsp;&nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+			  </span>	
+            </div>
+          </div>
+		  
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">金额</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="amount" placeholder="amount" class="form-control"  type="text">
+			  <div style="position:relative; top:10px;">
+				  &nbsp;&nbsp;&nbsp;<input type="radio" id='currency' name="currency" value="SBD" checked>SBD
+				  &nbsp;<input type="radio" id='currency' name="currency" value="STEEM">STEEM
+			  </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">备注</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input  id="memo" placeholder="memo" class="form-control"  type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Success message -->
+        <div id="messagebox" style="padding-left: 10px;"></div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-8"><br>
+            <input type="button" id="util_transfer" value="转帐" class="btn btn-warning"/>
+          </div>
+        </div>
+
+      </fieldset>
+
+  </div>
+
+  </div>
+
+</body>
+</html>
+
